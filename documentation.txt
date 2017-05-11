@@ -1,0 +1,62 @@
+Git GuideLines
+
+//To configure your username in Git Bash 
+$ Git config --global user.name "exampleusername"
+
+//To configure your email in Git Bash 
+$ Git config --global user.email "exampleemail@gmail.com"
+
+//[cd]Change Directory
+//[e.g cd Desktop] The directory of repository that you been clone.
+
+//using https
+$ Git clone https://github.com/<exampleusername>/<examplerepositoryname>.git ||
+//using ssh
+$ git clone git@github.com:<exampleusername>/<examplerepositoryname>.git
+
+//To access the directory of your file that you been clone
+cd examplerepositoryname
+
+//To add file in the examplerepositoryname
+touch filename.md
+
+//Check the status of file
+if(examplerepositoryname =="Color Red")
+{
+	the examplerepositoryname directory has been modified.
+
+	//[Git add] the queue to be committed later || Files are not committed && tells git to start tracking a file
+	$ git add filename.md || git add .
+
+
+	//[Git commit] Added the files and create new revision with a log
+	$ git commit -m "remarks"
+
+	//[Git push] to send the changes to the remote repository and visible to all collaborator
+	$ Git push
+
+	//[Git pull origin master] to get all the changes file || text from the remote repository to send back to your directory 
+	//in your desktop
+	$ Git pull origin master
+
+
+}
+else
+{
+	not modified.
+}
+
+//if you want to look for all the available branch
+$ Git Branch
+
+//if you want to create your own branch
+$ Git Branch branchName || $ git checkout -b branchName
+
+//if you want to merge your branch to master
+$ Git checkout master
+
+$ Git merge branchName
+
+
+
+
